@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+
+  h4 {
+    @apply text-lg;
+  }
+
+  section {
+    @apply xl:py-24 py-16;
+  }
+
+  button {
+    @apply py-4 px-10 rounded-full text-xl;
+  }
+
+  main ol {
+    list-style: decimal;
+  }
+
+  p {
+    @apply my-5 text-2xl;
+  }
+}

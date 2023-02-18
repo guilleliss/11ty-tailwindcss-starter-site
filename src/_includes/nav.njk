@@ -1,0 +1,16 @@
+<nav>
+  <ul class="flex justify-end">
+    {% set navPages = collections.all | eleventyNavigation %}
+
+    {% for navItem in navPages %}
+    <li class="nav-item ml-4">
+      <a 
+        class="font-weight-normal nav-link p-0{% if navItem.url == page.url %} active{% endif %}" 
+        href="{{ navItem.url | url }}"
+      >
+        {{ navItem.key }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

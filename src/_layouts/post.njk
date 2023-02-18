@@ -1,0 +1,16 @@
+---
+layout: base
+---
+<article>
+  <h3 class="text-4xl">{{ title }}</h3>
+  <span class="mb-6">{% readingTime content %}</span>
+
+  {{ content | safe }}
+
+  <h4 class="mb-3">Tags</h4>
+  {% tagList tags %}
+
+  <div class="flex justify-end mt-10">  
+    <a href="/" class="button text-2xl">< Back</a>
+  </div>
+</article>

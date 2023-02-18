@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+  {% include "head.njk" %}
+  <body>
+    {% include "header.njk" %}
+    <main class="container py-10">
+    {% block content %} {{ content | safe }} {% endblock %}
+    </main>
+    {% include "footer.njk" %}
+  </body>
+</html>
